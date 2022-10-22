@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F24D8D7280FE5DF00B4DC2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24D8D6280FE5DF00B4DC2C /* AppDelegate.swift */; };
+		1F24D8D9280FE5DF00B4DC2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24D8D8280FE5DF00B4DC2C /* SceneDelegate.swift */; };
+		1F24D8DE280FE5DF00B4DC2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F24D8DC280FE5DF00B4DC2C /* Main.storyboard */; };
+		1F24D8E1280FE5DF00B4DC2C /* Diplom_BSWear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F24D8DF280FE5DF00B4DC2C /* Diplom_BSWear.xcdatamodeld */; };
+		1F24D8E3280FE5E300B4DC2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F24D8E2280FE5E300B4DC2C /* Assets.xcassets */; };
+		1F24D8E6280FE5E300B4DC2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F24D8E4280FE5E300B4DC2C /* LaunchScreen.storyboard */; };
+		1F24D8F1280FE5E300B4DC2C /* Diplom_BSWearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24D8F0280FE5E300B4DC2C /* Diplom_BSWearTests.swift */; };
+		1F24D8FC280FE5E300B4DC2C /* Diplom_BSWearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24D8FB280FE5E300B4DC2C /* Diplom_BSWearUITests.swift */; };
+		1F24D9332812857100B4DC2C /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24D9322812857100B4DC2C /* CategoryController.swift */; };
+		1F24D948281806D200B4DC2C /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24D947281806D200B4DC2C /* ItemsViewController.swift */; };
+		1F3386CC2874934A00E0E564 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386CB2874934A00E0E564 /* Category.swift */; };
+		1F3386D4287BF1D500E0E564 /* CategoryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386D3287BF1D500E0E564 /* CategoryLoader.swift */; };
+		1F34D080282BF91A00530C3D /* FullBusketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F34D07F282BF91A00530C3D /* FullBusketViewController.swift */; };
+		1F3531BB28214B5D000C36A4 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3531BA28214B5D000C36A4 /* CardViewController.swift */; };
+		1F3531C3282163A0000C36A4 /* AkzidenzGroteskPro in Resources */ = {isa = PBXBuildFile; fileRef = 1F3531C2282163A0000C36A4 /* AkzidenzGroteskPro */; };
+		1F3C199429012418009F88F5 /* BusketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C199329012418009F88F5 /* BusketViewController.swift */; };
+		1F3EBD862844F13D000BA835 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EBD852844F13D000BA835 /* CategoryCell.swift */; };
+		1F7DF93B28B39E64008CC66F /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7DF93A28B39E64008CC66F /* ItemsCollectionViewCell.swift */; };
+		1F7DF94928B67B8A008CC66F /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7DF94828B67B8A008CC66F /* BasketTableViewCell.swift */; };
+		1F8E022628EF368300923FA5 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E022528EF368300923FA5 /* Persistance.swift */; };
+		352BB0D42F222D395B32EEC1 /* Pods_Diplom_BSWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71EEB4C7A2E34EC1895F888 /* Pods_Diplom_BSWear.framework */; };
+		532A1EFFB8B86DF2B1C7E458 /* Pods_Diplom_BSWear_Diplom_BSWearUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809E1EAF585968E1F5A15F33 /* Pods_Diplom_BSWear_Diplom_BSWearUITests.framework */; };
+		5D6DCFEA61FA5EAFFBF01FEA /* Pods_Diplom_BSWearTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5026712CCAE2F400AC2D190 /* Pods_Diplom_BSWearTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F24D8ED280FE5E300B4DC2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F24D8CB280FE5DE00B4DC2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F24D8D2280FE5DE00B4DC2C;
+			remoteInfo = "Diplom BSWear";
+		};
+		1F24D8F8280FE5E300B4DC2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F24D8CB280FE5DE00B4DC2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F24D8D2280FE5DE00B4DC2C;
+			remoteInfo = "Diplom BSWear";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09E7218A13A29351D37A8618 /* Pods-Diplom BSWear-Diplom BSWearUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplom BSWear-Diplom BSWearUITests.release.xcconfig"; path = "Target Support Files/Pods-Diplom BSWear-Diplom BSWearUITests/Pods-Diplom BSWear-Diplom BSWearUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1F24D8D3280FE5DF00B4DC2C /* Diplom BSWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diplom BSWear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F24D8D6280FE5DF00B4DC2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F24D8D8280FE5DF00B4DC2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1F24D8DD280FE5DF00B4DC2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F24D8E0280FE5DF00B4DC2C /* Diplom_BSWear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diplom_BSWear.xcdatamodel; sourceTree = "<group>"; };
+		1F24D8E2280FE5E300B4DC2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F24D8E5280FE5E300B4DC2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F24D8E7280FE5E300B4DC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F24D8EC280FE5E300B4DC2C /* Diplom BSWearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diplom BSWearTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F24D8F0280FE5E300B4DC2C /* Diplom_BSWearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diplom_BSWearTests.swift; sourceTree = "<group>"; };
+		1F24D8F2280FE5E300B4DC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F24D8F7280FE5E300B4DC2C /* Diplom BSWearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diplom BSWearUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F24D8FB280FE5E300B4DC2C /* Diplom_BSWearUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diplom_BSWearUITests.swift; sourceTree = "<group>"; };
+		1F24D8FD280FE5E300B4DC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F24D9322812857100B4DC2C /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
+		1F24D947281806D200B4DC2C /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		1F3386CB2874934A00E0E564 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1F3386D3287BF1D500E0E564 /* CategoryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryLoader.swift; sourceTree = "<group>"; };
+		1F338714288272C400E0E564 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F338719288272D000E0E564 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F34D07F282BF91A00530C3D /* FullBusketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullBusketViewController.swift; sourceTree = "<group>"; };
+		1F3531BA28214B5D000C36A4 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		1F3531C2282163A0000C36A4 /* AkzidenzGroteskPro */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AkzidenzGroteskPro; path = ../../../Downloads/AkzidenzGroteskPro; sourceTree = "<group>"; };
+		1F3C199329012418009F88F5 /* BusketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusketViewController.swift; sourceTree = "<group>"; };
+		1F3EBD852844F13D000BA835 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		1F7DF93A28B39E64008CC66F /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F7DF94828B67B8A008CC66F /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		1F8E022528EF368300923FA5 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		2D43B278BCF230D30DECAA62 /* Pods-Diplom BSWear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplom BSWear.debug.xcconfig"; path = "Target Support Files/Pods-Diplom BSWear/Pods-Diplom BSWear.debug.xcconfig"; sourceTree = "<group>"; };
+		3E8F7C13FA7DCAF5F1AD552A /* Pods-Diplom BSWear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplom BSWear.release.xcconfig"; path = "Target Support Files/Pods-Diplom BSWear/Pods-Diplom BSWear.release.xcconfig"; sourceTree = "<group>"; };
+		641C1A26B3962FC0B11A4BDB /* Pods-Diplom BSWearTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplom BSWearTests.debug.xcconfig"; path = "Target Support Files/Pods-Diplom BSWearTests/Pods-Diplom BSWearTests.debug.xcconfig"; sourceTree = "<group>"; };
+		809E1EAF585968E1F5A15F33 /* Pods_Diplom_BSWear_Diplom_BSWearUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diplom_BSWear_Diplom_BSWearUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71EEB4C7A2E34EC1895F888 /* Pods_Diplom_BSWear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diplom_BSWear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2CC2F1AB99B4AADB5BD76E /* Pods-Diplom BSWearTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplom BSWearTests.release.xcconfig"; path = "Target Support Files/Pods-Diplom BSWearTests/Pods-Diplom BSWearTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE5694A2C68F6BC064129BE0 /* Pods-Diplom BSWear-Diplom BSWearUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplom BSWear-Diplom BSWearUITests.debug.xcconfig"; path = "Target Support Files/Pods-Diplom BSWear-Diplom BSWearUITests/Pods-Diplom BSWear-Diplom BSWearUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5026712CCAE2F400AC2D190 /* Pods_Diplom_BSWearTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diplom_BSWearTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F24D8D0280FE5DE00B4DC2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352BB0D42F222D395B32EEC1 /* Pods_Diplom_BSWear.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F24D8E9280FE5E300B4DC2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6DCFEA61FA5EAFFBF01FEA /* Pods_Diplom_BSWearTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F24D8F4280FE5E300B4DC2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532A1EFFB8B86DF2B1C7E458 /* Pods_Diplom_BSWear_Diplom_BSWearUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F24D8CA280FE5DE00B4DC2C = {
+			isa = PBXGroup;
+			children = (
+				1F24D8D5280FE5DF00B4DC2C /* Diplom BSWear */,
+				1F24D8EF280FE5E300B4DC2C /* Diplom BSWearTests */,
+				1F24D8FA280FE5E300B4DC2C /* Diplom BSWearUITests */,
+				1F24D8D4280FE5DF00B4DC2C /* Products */,
+				E63D2F4272291A0BDFA22B45 /* Pods */,
+				4E9560FE8368D9EA5C0140AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F24D8D4280FE5DF00B4DC2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F24D8D3280FE5DF00B4DC2C /* Diplom BSWear.app */,
+				1F24D8EC280FE5E300B4DC2C /* Diplom BSWearTests.xctest */,
+				1F24D8F7280FE5E300B4DC2C /* Diplom BSWearUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F24D8D5280FE5DF00B4DC2C /* Diplom BSWear */ = {
+			isa = PBXGroup;
+			children = (
+				1F3531C2282163A0000C36A4 /* AkzidenzGroteskPro */,
+				1F24D8D6280FE5DF00B4DC2C /* AppDelegate.swift */,
+				1F24D8D8280FE5DF00B4DC2C /* SceneDelegate.swift */,
+				1F3386D3287BF1D500E0E564 /* CategoryLoader.swift */,
+				1F8E022528EF368300923FA5 /* Persistance.swift */,
+				1F3386CB2874934A00E0E564 /* Category.swift */,
+				1F24D9322812857100B4DC2C /* CategoryController.swift */,
+				1F3EBD852844F13D000BA835 /* CategoryCell.swift */,
+				1F24D947281806D200B4DC2C /* ItemsViewController.swift */,
+				1F7DF93A28B39E64008CC66F /* ItemsCollectionViewCell.swift */,
+				1F3531BA28214B5D000C36A4 /* CardViewController.swift */,
+				1F34D07F282BF91A00530C3D /* FullBusketViewController.swift */,
+				1F3C199329012418009F88F5 /* BusketViewController.swift */,
+				1F7DF94828B67B8A008CC66F /* BasketTableViewCell.swift */,
+				1F24D8DC280FE5DF00B4DC2C /* Main.storyboard */,
+				1F24D8E2280FE5E300B4DC2C /* Assets.xcassets */,
+				1F24D8E4280FE5E300B4DC2C /* LaunchScreen.storyboard */,
+				1F24D8E7280FE5E300B4DC2C /* Info.plist */,
+				1F24D8DF280FE5DF00B4DC2C /* Diplom_BSWear.xcdatamodeld */,
+			);
+			path = "Diplom BSWear";
+			sourceTree = "<group>";
+		};
+		1F24D8EF280FE5E300B4DC2C /* Diplom BSWearTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F24D8F0280FE5E300B4DC2C /* Diplom_BSWearTests.swift */,
+				1F24D8F2280FE5E300B4DC2C /* Info.plist */,
+			);
+			path = "Diplom BSWearTests";
+			sourceTree = "<group>";
+		};
+		1F24D8FA280FE5E300B4DC2C /* Diplom BSWearUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F24D8FB280FE5E300B4DC2C /* Diplom_BSWearUITests.swift */,
+				1F24D8FD280FE5E300B4DC2C /* Info.plist */,
+			);
+			path = "Diplom BSWearUITests";
+			sourceTree = "<group>";
+		};
+		4E9560FE8368D9EA5C0140AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F338719288272D000E0E564 /* Alamofire.framework */,
+				1F338714288272C400E0E564 /* AlamofireImage.framework */,
+				B71EEB4C7A2E34EC1895F888 /* Pods_Diplom_BSWear.framework */,
+				809E1EAF585968E1F5A15F33 /* Pods_Diplom_BSWear_Diplom_BSWearUITests.framework */,
+				F5026712CCAE2F400AC2D190 /* Pods_Diplom_BSWearTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63D2F4272291A0BDFA22B45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D43B278BCF230D30DECAA62 /* Pods-Diplom BSWear.debug.xcconfig */,
+				3E8F7C13FA7DCAF5F1AD552A /* Pods-Diplom BSWear.release.xcconfig */,
+				EE5694A2C68F6BC064129BE0 /* Pods-Diplom BSWear-Diplom BSWearUITests.debug.xcconfig */,
+				09E7218A13A29351D37A8618 /* Pods-Diplom BSWear-Diplom BSWearUITests.release.xcconfig */,
+				641C1A26B3962FC0B11A4BDB /* Pods-Diplom BSWearTests.debug.xcconfig */,
+				CD2CC2F1AB99B4AADB5BD76E /* Pods-Diplom BSWearTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F24D8D2280FE5DE00B4DC2C /* Diplom BSWear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F24D900280FE5E300B4DC2C /* Build configuration list for PBXNativeTarget "Diplom BSWear" */;
+			buildPhases = (
+				0FF12826B7B697E5A341DFD7 /* [CP] Check Pods Manifest.lock */,
+				1F24D8CF280FE5DE00B4DC2C /* Sources */,
+				1F24D8D0280FE5DE00B4DC2C /* Frameworks */,
+				1F24D8D1280FE5DE00B4DC2C /* Resources */,
+				AB37FF2DE80B8DB24D2FE981 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Diplom BSWear";
+			productName = "Diplom BSWear";
+			productReference = 1F24D8D3280FE5DF00B4DC2C /* Diplom BSWear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F24D8EB280FE5E300B4DC2C /* Diplom BSWearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F24D903280FE5E300B4DC2C /* Build configuration list for PBXNativeTarget "Diplom BSWearTests" */;
+			buildPhases = (
+				68B7E47263E719118D21CC17 /* [CP] Check Pods Manifest.lock */,
+				1F24D8E8280FE5E300B4DC2C /* Sources */,
+				1F24D8E9280FE5E300B4DC2C /* Frameworks */,
+				1F24D8EA280FE5E300B4DC2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F24D8EE280FE5E300B4DC2C /* PBXTargetDependency */,
+			);
+			name = "Diplom BSWearTests";
+			productName = "Diplom BSWearTests";
+			productReference = 1F24D8EC280FE5E300B4DC2C /* Diplom BSWearTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F24D8F6280FE5E300B4DC2C /* Diplom BSWearUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F24D906280FE5E300B4DC2C /* Build configuration list for PBXNativeTarget "Diplom BSWearUITests" */;
+			buildPhases = (
+				07499D38EA4C2EB070ACEEED /* [CP] Check Pods Manifest.lock */,
+				1F24D8F3280FE5E300B4DC2C /* Sources */,
+				1F24D8F4280FE5E300B4DC2C /* Frameworks */,
+				1F24D8F5280FE5E300B4DC2C /* Resources */,
+				92ECA08D5018364601ABD5FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F24D8F9280FE5E300B4DC2C /* PBXTargetDependency */,
+			);
+			name = "Diplom BSWearUITests";
+			productName = "Diplom BSWearUITests";
+			productReference = 1F24D8F7280FE5E300B4DC2C /* Diplom BSWearUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F24D8CB280FE5DE00B4DC2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					1F24D8D2280FE5DE00B4DC2C = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					1F24D8EB280FE5E300B4DC2C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 1F24D8D2280FE5DE00B4DC2C;
+					};
+					1F24D8F6280FE5E300B4DC2C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 1F24D8D2280FE5DE00B4DC2C;
+					};
+				};
+			};
+			buildConfigurationList = 1F24D8CE280FE5DE00B4DC2C /* Build configuration list for PBXProject "Diplom BSWear" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F24D8CA280FE5DE00B4DC2C;
+			productRefGroup = 1F24D8D4280FE5DF00B4DC2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F24D8D2280FE5DE00B4DC2C /* Diplom BSWear */,
+				1F24D8EB280FE5E300B4DC2C /* Diplom BSWearTests */,
+				1F24D8F6280FE5E300B4DC2C /* Diplom BSWearUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F24D8D1280FE5DE00B4DC2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F24D8E6280FE5E300B4DC2C /* LaunchScreen.storyboard in Resources */,
+				1F24D8E3280FE5E300B4DC2C /* Assets.xcassets in Resources */,
+				1F24D8DE280FE5DF00B4DC2C /* Main.storyboard in Resources */,
+				1F3531C3282163A0000C36A4 /* AkzidenzGroteskPro in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F24D8EA280FE5E300B4DC2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F24D8F5280FE5E300B4DC2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07499D38EA4C2EB070ACEEED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diplom BSWear-Diplom BSWearUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0FF12826B7B697E5A341DFD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diplom BSWear-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68B7E47263E719118D21CC17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diplom BSWearTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92ECA08D5018364601ABD5FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diplom BSWear-Diplom BSWearUITests/Pods-Diplom BSWear-Diplom BSWearUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diplom BSWear-Diplom BSWearUITests/Pods-Diplom BSWear-Diplom BSWearUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diplom BSWear-Diplom BSWearUITests/Pods-Diplom BSWear-Diplom BSWearUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB37FF2DE80B8DB24D2FE981 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diplom BSWear/Pods-Diplom BSWear-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diplom BSWear/Pods-Diplom BSWear-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diplom BSWear/Pods-Diplom BSWear-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F24D8CF280FE5DE00B4DC2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F24D8D7280FE5DF00B4DC2C /* AppDelegate.swift in Sources */,
+				1F3EBD862844F13D000BA835 /* CategoryCell.swift in Sources */,
+				1F7DF94928B67B8A008CC66F /* BasketTableViewCell.swift in Sources */,
+				1F24D8E1280FE5DF00B4DC2C /* Diplom_BSWear.xcdatamodeld in Sources */,
+				1F34D080282BF91A00530C3D /* FullBusketViewController.swift in Sources */,
+				1F3531BB28214B5D000C36A4 /* CardViewController.swift in Sources */,
+				1F7DF93B28B39E64008CC66F /* ItemsCollectionViewCell.swift in Sources */,
+				1F8E022628EF368300923FA5 /* Persistance.swift in Sources */,
+				1F3C199429012418009F88F5 /* BusketViewController.swift in Sources */,
+				1F24D948281806D200B4DC2C /* ItemsViewController.swift in Sources */,
+				1F3386CC2874934A00E0E564 /* Category.swift in Sources */,
+				1F24D8D9280FE5DF00B4DC2C /* SceneDelegate.swift in Sources */,
+				1F3386D4287BF1D500E0E564 /* CategoryLoader.swift in Sources */,
+				1F24D9332812857100B4DC2C /* CategoryController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F24D8E8280FE5E300B4DC2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F24D8F1280FE5E300B4DC2C /* Diplom_BSWearTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F24D8F3280FE5E300B4DC2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F24D8FC280FE5E300B4DC2C /* Diplom_BSWearUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F24D8EE280FE5E300B4DC2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F24D8D2280FE5DE00B4DC2C /* Diplom BSWear */;
+			targetProxy = 1F24D8ED280FE5E300B4DC2C /* PBXContainerItemProxy */;
+		};
+		1F24D8F9280FE5E300B4DC2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F24D8D2280FE5DE00B4DC2C /* Diplom BSWear */;
+			targetProxy = 1F24D8F8280FE5E300B4DC2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F24D8DC280FE5DF00B4DC2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F24D8DD280FE5DF00B4DC2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F24D8E4280FE5E300B4DC2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F24D8E5280FE5E300B4DC2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F24D8FE280FE5E300B4DC2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F24D8FF280FE5E300B4DC2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F24D901280FE5E300B4DC2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D43B278BCF230D30DECAA62 /* Pods-Diplom BSWear.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C9S7JT7L3;
+				INFOPLIST_FILE = "Diplom BSWear/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "i0240.Diplom-BSWear";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F24D902280FE5E300B4DC2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E8F7C13FA7DCAF5F1AD552A /* Pods-Diplom BSWear.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C9S7JT7L3;
+				INFOPLIST_FILE = "Diplom BSWear/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "i0240.Diplom-BSWear";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F24D904280FE5E300B4DC2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641C1A26B3962FC0B11A4BDB /* Pods-Diplom BSWearTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C9S7JT7L3;
+				INFOPLIST_FILE = "Diplom BSWearTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "i0240.Diplom-BSWearTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diplom BSWear.app/Diplom BSWear";
+			};
+			name = Debug;
+		};
+		1F24D905280FE5E300B4DC2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2CC2F1AB99B4AADB5BD76E /* Pods-Diplom BSWearTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C9S7JT7L3;
+				INFOPLIST_FILE = "Diplom BSWearTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "i0240.Diplom-BSWearTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diplom BSWear.app/Diplom BSWear";
+			};
+			name = Release;
+		};
+		1F24D907280FE5E300B4DC2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE5694A2C68F6BC064129BE0 /* Pods-Diplom BSWear-Diplom BSWearUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C9S7JT7L3;
+				INFOPLIST_FILE = "Diplom BSWearUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "i0240.Diplom-BSWearUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Diplom BSWear";
+			};
+			name = Debug;
+		};
+		1F24D908280FE5E300B4DC2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E7218A13A29351D37A8618 /* Pods-Diplom BSWear-Diplom BSWearUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C9S7JT7L3;
+				INFOPLIST_FILE = "Diplom BSWearUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "i0240.Diplom-BSWearUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Diplom BSWear";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F24D8CE280FE5DE00B4DC2C /* Build configuration list for PBXProject "Diplom BSWear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F24D8FE280FE5E300B4DC2C /* Debug */,
+				1F24D8FF280FE5E300B4DC2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F24D900280FE5E300B4DC2C /* Build configuration list for PBXNativeTarget "Diplom BSWear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F24D901280FE5E300B4DC2C /* Debug */,
+				1F24D902280FE5E300B4DC2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F24D903280FE5E300B4DC2C /* Build configuration list for PBXNativeTarget "Diplom BSWearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F24D904280FE5E300B4DC2C /* Debug */,
+				1F24D905280FE5E300B4DC2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F24D906280FE5E300B4DC2C /* Build configuration list for PBXNativeTarget "Diplom BSWearUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F24D907280FE5E300B4DC2C /* Debug */,
+				1F24D908280FE5E300B4DC2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F24D8DF280FE5DF00B4DC2C /* Diplom_BSWear.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F24D8E0280FE5DF00B4DC2C /* Diplom_BSWear.xcdatamodel */,
+			);
+			currentVersion = 1F24D8E0280FE5DF00B4DC2C /* Diplom_BSWear.xcdatamodel */;
+			path = Diplom_BSWear.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1F24D8CB280FE5DE00B4DC2C /* Project object */;
+}
