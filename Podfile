@@ -9,7 +9,7 @@ target 'Diplom BSWear' do
 
 pod 'Alamofire' 
 pod 'AlamofireImage'
-pod 'RealmSwift', '~> 5.5.0'
+pod 'RealmSwift'
 
   target 'Diplom BSWearTests' do
     inherit! :search_paths

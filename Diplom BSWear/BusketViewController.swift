@@ -13,7 +13,7 @@ class BusketViewController: UIViewController {
     @IBOutlet weak var busketTableView: UITableView!
     @IBOutlet weak var totalPriceLabel: UILabel!
     
-    var productsInBasket:[SelectedProduct] = []
+    var productsInBasket: [SelectedProduct] = []
     var totalSum = 0.0
     
     override func viewDidLoad() {
@@ -22,48 +22,48 @@ class BusketViewController: UIViewController {
         navigationItem.title = "Basket"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        busketTableView.reloadData()
+        busketTableView.tableFooterView = UIView()
     }
 
-//override func viewWillAppear(_ animated: Bool) {
-//        productsInBasket.removeAll()
-//        totalSum = 0.0
-//    if let basketProducts = Persistance.shared.realmRead {
-//        for prod in basketProducts {
-//            productsInBasket.append(prod)
-//            if let sum = Double(prod.productPrice, nil) {
-//                totalSum += sum
-//            }
-//        }
-//        totalPriceLabel.text = "\(totalSum)"
-//        busketTableView.reloadData()
-//        }
-//    }
+override func viewWillAppear(_ animated: Bool) {
+        productsInBasket.removeAll()
+        totalSum = 0.0
+    if let basketProducts = Persistance.shared.realmRead() {
+        for prod in basketProducts {
+            productsInBasket.append(prod)
+            if let sum = Double("\(prod.productPrice)") {
+                totalSum += sum
+            }
+        }
+        totalPriceLabel.text = "\(totalSum)"
+        busketTableView.reloadData()
+        }
+    }
 }
 
 extension BusketViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(Persistance.shared.realmRead.count)
-        return 1
-//        if Persistance.shared.realmRead.count == 0 {
-//            tableView.setEmptyMessage("Basket is empty")
-//                } else {
-//                    tableView.restore()
-//                }
-//        return Persistance.shared.realmRead.count
+//        print(productsInBasket.count)
+//        return 1
+        if productsInBasket.count == 0 {
+            tableView.setEmptyMessage("Basket is empty")
+                } else {
+                    tableView.restore()
+                }
+        return productsInBasket.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "basketCell", for: indexPath) as! BasketTableViewCell
-        let model = Persistance.shared.realmRead[indexPath.row]
-                
-            cell.basketNameLabel.text = "\(model.productName)"
-            cell.basketPriceLabel.text = "\(model.productPrice)"
         
-            if let url = URL(string: (model.productImage)) {
-                cell.basketImage.af.setImage(withURL: url)
-                }
-                    
+        let model = productsInBasket[indexPath.row]
+        
+        cell.basketNameLabel.text = "\(model.productName)"
+        cell.basketPriceLabel.text = "\(model.productPrice)"
+        
+        if let url = URL(string: (model.productImage)) {
+            cell.basketImage.af.setImage(withURL: url)
+        }
                 return cell
         }
 }

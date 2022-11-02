@@ -34,7 +34,7 @@ class CardViewController: UIViewController {
             let selectedProduct = SelectedProduct()
                 selectedProduct.productImage = prod.image ?? ""
                 selectedProduct.productName = prod.titles ?? ""
-                selectedProduct.productPrice = prod.price ?? 0.0
+                selectedProduct.productPrice = prod.price!
             
             Persistance.shared.realmWrite(selectedProduct)
         }

@@ -41,6 +41,7 @@
 #include <realm/util/assert.hpp>
 #include <realm/util/terminate.hpp>
 #include <memory>
+#include <stdexcept>
 
 #include <atomic>
 
@@ -217,7 +218,11 @@ public:
     RobustMutex();
     ~RobustMutex() noexcept;
 
-    static bool is_robust_on_this_platform() noexcept;
+#ifdef REALM_HAVE_ROBUST_PTHREAD_MUTEX
+    constexpr static bool is_robust_on_this_platform = true;
+#else
+    constexpr static bool is_robust_on_this_platform = false;
+#endif
 
     class NotRecoverable;
 
