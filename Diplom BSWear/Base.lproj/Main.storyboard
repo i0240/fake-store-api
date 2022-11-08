@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xc0-F3-At5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xc0-F3-At5">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="AkzidenzGroteskPro-Md.ttf">
-            <string>AkzidenzGroteskPro-Md</string>
-        </array>
         <array key="Roboto-Regular.ttf">
             <string>Roboto-Regular</string>
         </array>
@@ -20,6 +18,9 @@
         </array>
         <array key="SFProDisplay-Semibold.ttf">
             <string>SFProDisplay-Semibold</string>
+        </array>
+        <array key="akzidenzgroteskpro-md.ttf">
+            <string>AkzidenzGroteskPro-Md</string>
         </array>
     </customFonts>
     <scenes>
@@ -36,7 +37,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoryCell" rowHeight="80" id="QWW-Aw-zaw" customClass="CategoryCell" customModule="Diplom_BSWear" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QWW-Aw-zaw" id="Snl-9t-mUk" customClass="CategoryCell" customModule="Diplom_BSWear" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
@@ -259,7 +260,8 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qAo-LO-RMl" kind="show" id="QW9-a4-lca"/>
+                                    <action selector="orderProduct:" destination="LfM-8G-9GA" eventType="touchUpInside" id="7Ab-LB-Ppp"/>
+                                    <segue destination="EbA-Vc-yov" kind="show" id="4Xp-yC-fOC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXV-0L-xb1">
@@ -315,15 +317,15 @@
             <objects>
                 <viewController id="EbA-Vc-yov" customClass="BusketViewController" customModule="Diplom_BSWear" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bgn-jC-hqS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xs1-4e-Non">
-                                <rect key="frame" x="0.0" y="44" width="375" height="443"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="basketCell" rowHeight="125" id="J8g-RG-7wF" customClass="BasketTableViewCell" customModule="Diplom_BSWear" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="125"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J8g-RG-7wF" id="aAS-8Z-ITv">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
@@ -390,7 +392,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwY-XN-mA4">
-                                <rect key="frame" x="0.0" y="487" width="375" height="180"/>
+                                <rect key="frame" x="0.0" y="467" width="375" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Итого:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVf-6h-7Ec">
                                         <rect key="frame" x="16" y="9" width="172" height="16"/>
@@ -421,7 +423,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZZ-Y3-D4j">
-                                        <rect key="frame" x="16" y="85" width="344" height="48"/>
+                                        <rect key="frame" x="16" y="47" width="344" height="48"/>
                                         <color key="backgroundColor" red="0.0" green="0.4788140655" blue="0.99942928549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="344" id="fTm-YD-ylb"/>
@@ -448,7 +450,7 @@
                                     <constraint firstAttribute="bottom" secondItem="gRl-dI-Hbn" secondAttribute="bottom" constant="131" id="ZbT-uS-5c8"/>
                                     <constraint firstAttribute="trailing" secondItem="HZZ-Y3-D4j" secondAttribute="trailing" constant="15" id="asP-Dl-iH7"/>
                                     <constraint firstAttribute="trailing" secondItem="0VF-4r-bAi" secondAttribute="trailing" constant="15" id="dp5-In-Db7"/>
-                                    <constraint firstAttribute="bottom" secondItem="HZZ-Y3-D4j" secondAttribute="bottom" constant="47" id="ges-Po-4QT"/>
+                                    <constraint firstAttribute="bottom" secondItem="HZZ-Y3-D4j" secondAttribute="bottom" constant="85" id="ges-Po-4QT"/>
                                     <constraint firstAttribute="width" constant="375" id="nhY-VC-ob2"/>
                                     <constraint firstAttribute="bottom" secondItem="DVf-6h-7Ec" secondAttribute="bottom" constant="155" id="qE7-fq-PdU"/>
                                 </constraints>
@@ -479,7 +481,7 @@
         <scene sceneID="rLu-fj-NTf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fhm-hk-yLf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Items" id="1r3-eV-mEs"/>
+                    <tabBarItem key="tabBarItem" title="Items" image="book" catalog="system" id="1r3-eV-mEs"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="qIo-Nh-klL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oEd-w6-PGX">
@@ -499,7 +501,7 @@
         <scene sceneID="wLF-gv-FLK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qAo-LO-RMl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Basket" id="5J0-gz-Fzq"/>
+                    <tabBarItem key="tabBarItem" title="Basket" image="baselineshoppingCart24px" id="5J0-gz-Fzq"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="SpL-v8-ecl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wgV-mJ-KOa">
@@ -521,6 +523,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xc0-F3-At5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lSe-Qy-Yce">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -535,13 +538,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yuU-Vk-Hdc"/>
+        <segue reference="4Xp-yC-fOC"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Bitmap-1" width="375" height="317.5"/>
         <image name="backbutton" width="16.5" height="12"/>
         <image name="baselinedelete24px" width="14" height="18"/>
+        <image name="baselineshoppingCart24px" width="20" height="20"/>
         <image name="baselineshoppingCart24px4" width="20" height="20"/>
+        <image name="book" catalog="system" width="128" height="99"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

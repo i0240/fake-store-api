@@ -36,9 +36,7 @@ class CardViewController: UIViewController {
                 selectedProduct.productName = prod.titles ?? ""
                 selectedProduct.productPrice = prod.price!
             
-            Persistance.shared.realmWrite(selectedProduct)
+            Persistance.shared.realmWrite(product: selectedProduct)
         }
     }
-    
-    
 }

@@ -12,23 +12,19 @@ class Persistance {
     
     let realm = try! Realm()
     
-//    var realmRead: [SelectedProduct]? {
-//        return realm.objects(SelectedProduct.self).map{ $0 }
-//    }
-    
-    func realmWrite(_ product: Any) {
+    func realmWrite(product: SelectedProduct) {
         try! realm.write{
-            realm.add(product as! Object)
+            realm.add(product)
         }
     }
     
-    func realmDelete(_ product: SelectedProduct) {
+    func realmDelete(product: SelectedProduct) {
         try! realm.write{
             realm.delete(product)
         }
     }
-    func realmRead() -> Results<SelectedProduct>? {
-        let array = realm.objects(SelectedProduct.self)
-        return array
+    func realmRead() -> [SelectedProduct] {
+        let results: Results<SelectedProduct> = realm.objects(SelectedProduct.self)
+        return Array(results)
     }
 }

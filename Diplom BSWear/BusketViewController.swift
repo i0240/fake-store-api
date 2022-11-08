@@ -13,31 +13,34 @@ class BusketViewController: UIViewController {
     @IBOutlet weak var busketTableView: UITableView!
     @IBOutlet weak var totalPriceLabel: UILabel!
     
+    let persistance = Persistance.shared
     var productsInBasket: [SelectedProduct] = []
     var totalSum = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        productsInBasket = persistance.realmRead()
         navigationItem.title = "Basket"
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+    
         busketTableView.tableFooterView = UIView()
     }
 
 override func viewWillAppear(_ animated: Bool) {
         productsInBasket.removeAll()
-        totalSum = 0.0
-    if let basketProducts = Persistance.shared.realmRead() {
-        for prod in basketProducts {
-            productsInBasket.append(prod)
-            if let sum = Double("\(prod.productPrice)") {
+    var finalPrice: String {
+        guard productsInBasket.count > 0 else { return "0 $"}
+        
+        var totalSum: Double = 0.0
+        for item in productsInBasket {
+            if let sum = Double("\(item.productPrice)") {
                 totalSum += sum
             }
         }
-        totalPriceLabel.text = "\(totalSum)"
-        busketTableView.reloadData()
-        }
+        return "\(totalSum)"
+    }
+    totalPriceLabel.text = "\(finalPrice)"
+    busketTableView.reloadData()
     }
 }
 
