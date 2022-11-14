@@ -20,14 +20,16 @@ class BusketViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         productsInBasket = persistance.realmRead()
+        print("--------> \(productsInBasket)")
         navigationItem.title = "Basket"
         navigationController?.navigationBar.prefersLargeTitles = true
     
         busketTableView.tableFooterView = UIView()
+        busketTableView.reloadData()
     }
 
 override func viewWillAppear(_ animated: Bool) {
-        productsInBasket.removeAll()
+//        productsInBasket.removeAll()
     var finalPrice: String {
         guard productsInBasket.count > 0 else { return "0 $"}
         
@@ -47,12 +49,12 @@ override func viewWillAppear(_ animated: Bool) {
 extension BusketViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        print(productsInBasket.count)
-//        return 1
-        if productsInBasket.count == 0 {
-            tableView.setEmptyMessage("Basket is empty")
-                } else {
-                    tableView.restore()
-                }
+//        return 2
+//        if productsInBasket.count == 0 {
+//            tableView.setEmptyMessage("Basket is empty")
+//                } else {
+//                    tableView.restore()
+//                }
         return productsInBasket.count
     }
     

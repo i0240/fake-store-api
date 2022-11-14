@@ -37,6 +37,7 @@ class CardViewController: UIViewController {
                 selectedProduct.productPrice = prod.price!
             
             Persistance.shared.realmWrite(product: selectedProduct)
+//            print(selectedProduct)
         }
     }
 }
