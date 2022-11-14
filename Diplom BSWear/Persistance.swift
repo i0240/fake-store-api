@@ -18,7 +18,7 @@ class Persistance {
         }
     }
     
-    func realmDelete(product: SelectedProduct) {
+    func realmDelete(product: [SelectedProduct]) {
         try! realm.write{
             realm.delete(product)
         }

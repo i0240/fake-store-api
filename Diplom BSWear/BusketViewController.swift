@@ -15,12 +15,12 @@ class BusketViewController: UIViewController {
     
     let persistance = Persistance.shared
     var productsInBasket: [SelectedProduct] = []
+    var selectedCart: [SelectedProduct]?
     var totalSum = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         productsInBasket = persistance.realmRead()
-        print("--------> \(productsInBasket)")
         navigationItem.title = "Basket"
         navigationController?.navigationBar.prefersLargeTitles = true
     
@@ -29,10 +29,8 @@ class BusketViewController: UIViewController {
     }
 
 override func viewWillAppear(_ animated: Bool) {
-//        productsInBasket.removeAll()
     var finalPrice: String {
-        guard productsInBasket.count > 0 else { return "0 $"}
-        
+        guard productsInBasket.count > 0 else { return "0"}
         var totalSum: Double = 0.0
         for item in productsInBasket {
             if let sum = Double("\(item.productPrice)") {
@@ -41,20 +39,25 @@ override func viewWillAppear(_ animated: Bool) {
         }
         return "\(totalSum)"
     }
-    totalPriceLabel.text = "\(finalPrice)"
+    totalPriceLabel.text = "\(finalPrice) $"
     busketTableView.reloadData()
     }
+    @IBAction func deleteButton(_ sender: Any) {
+        let prods = self.productsInBasket
+        self.persistance.realmDelete(product: prods)
+        self.productsInBasket = self.persistance.realmRead()
+        self.busketTableView.reloadData()
+    }
+    
 }
 
 extension BusketViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        print(productsInBasket.count)
-//        return 2
-//        if productsInBasket.count == 0 {
-//            tableView.setEmptyMessage("Basket is empty")
-//                } else {
-//                    tableView.restore()
-//                }
+        if productsInBasket.count == 0 {
+            tableView.setEmptyMessage("Basket is empty")
+                } else {
+                    tableView.restore()
+                }
         return productsInBasket.count
     }
     
@@ -64,7 +67,7 @@ extension BusketViewController: UITableViewDataSource, UITableViewDelegate {
         let model = productsInBasket[indexPath.row]
         
         cell.basketNameLabel.text = "\(model.productName)"
-        cell.basketPriceLabel.text = "\(model.productPrice)"
+        cell.basketPriceLabel.text = "\(model.productPrice) $"
         
         if let url = URL(string: (model.productImage)) {
             cell.basketImage.af.setImage(withURL: url)
