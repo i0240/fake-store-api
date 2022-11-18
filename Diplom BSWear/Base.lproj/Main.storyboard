@@ -129,7 +129,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59.00 $" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6Y-TD-t7w">
-                                                    <rect key="frame" x="64.5" y="215" width="53.5" height="18.5"/>
+                                                    <rect key="frame" x="64.5" y="215" width="53" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -366,7 +366,7 @@
                                                     </constraints>
                                                     <state key="normal" image="baselinedelete24px"/>
                                                     <connections>
-                                                        <action selector="deleteButton:" destination="EbA-Vc-yov" eventType="touchUpInside" id="snu-2t-fRf"/>
+                                                        <action selector="deleteButton:" destination="EbA-Vc-yov" eventType="touchUpInside" id="euX-69-sk2"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -386,6 +386,7 @@
                                             <outlet property="basketImage" destination="sy4-4K-eu7" id="hJA-BG-hml"/>
                                             <outlet property="basketNameLabel" destination="CrD-qw-TfW" id="WxB-PN-Gnw"/>
                                             <outlet property="basketPriceLabel" destination="d2k-X0-Iaq" id="v5k-kQ-8eS"/>
+                                            <outlet property="removeRowButton" destination="Hfa-AP-Dl6" id="B3N-D9-atz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
